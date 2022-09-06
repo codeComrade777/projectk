@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 65.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: #E4E9F7;
+    height: 100vh;
+}
+nav{
+    background-color: #000;
+    width: 100%;
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.logo a{
+    color: #fff;
+    font-size: 2rem;
+    font-weight:500;
+}
+.search-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-container input{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+}
+.search-container  i{
+    padding: 12px;
+    font-size: 1.4rem;
+    background-color: #fff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+nav ul{
+    text-align: right;
+    width: 40%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+nav .viewitems{
+    font-size: 1.5rem;
+    background-color: #E4E9F7;
+    padding: 10px 20px;
+    color: #1a1a1a;
+}
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right:4%;
+    height: 320px;
+    max-width: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+ .sub-menu-wrap.open-menu{
+    max-width: 400px;
+} 
+.sub-menu-wrap .submenu .menu{
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 10px;
+}
+.sub-menu-wrap .submenu .menu a{
+    display:block;
+    padding: 10px;
+    color: #E4E9F7;
+    font-size: 1.5rem;
+    transition: transform 0.5s;
+}
+.sub-menu-wrap .submenu .menu a:hover{
+    transform: translateX(5px);
+}
+button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin: 10px;
+    padding: 10px 20px;
+}
+.form-container{
+   width: 100%;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.form-container form{
+    width: 90%;
+    max-width: 500px;
+    padding: 50px 30px 20px;
+    background-color: #000;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.input-group label{
+    color: #fff;
+    flex-basis: 28%;
+    font-size: 1.5rem;
+}
+.input-group input{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+::placeholder{
+    font-size: 14px;
+    color: #333;
+}
+.form-heading span{
+    font-size: 2rem;
+    color: #fff;
+}
+.forget{
+    margin-top: 30px;
+}
+.forget a{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.form-container{
+    position: absolute;
+    top: 40%;
+    right:30%;
+    height: 320px;
+    max-width:0px;
+    overflow: hidden;
+    transition: max-height .5s;
+}
+.search-container i{
+    position: absolute;
+    margin-left: 200px;
+    border-radius: 20px;
+    background-color: black;
+    color: #fff;
+}
+ .form-container.open-signin{
+    max-width: 600px;
+} 
+.form-container1{
+    width: 100%;
+   height: 100vh; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .form-container1 form{
+     width: 90%;
+     max-width: 500px;
+     padding: 50px 30px 100px;
+     background-color: #000;
+     position: relative;
+     border-radius: 4px;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ }
+.form-container1{
+    position: absolute;
+    top: 35%;
+    right:32%;
+    height: 420px;
+    max-width:0px;
+    overflow: hidden;
+    transition: max-height .5s;
+}
+.form-container1.open-login{
+    max-width: 500px;
+}
+
+.submit button{
+    width: 100%;
+    background-color: #fff;
+    color:#000;
+    border-radius: 4px;
+    border: none;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+.input-group span{
+    position: absolute;
+    bottom:12px;
+    right: 17px;
+    font-size: 14px;
+    color: #fff;
+}
+.menu-btn{
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+/* 
+.submit #submit-error span{
+    color: #fff;
+    font-size: 1.3rem;
+} */
+.input-group span i{
+    color: #fff;
+}
+
+/*Responsiveness*/
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:768px){
+    .menu-btn{
+        display: inline-block;
+    }
+   .header nav ul{
+        top: 99%;
+        left: 0;
+        right: 0;
+        transition: .2s linear;
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+ .header nav ul.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+     }
+     nav ul li a{
+        display: block;
+        margin:2rem;
+     }
+}

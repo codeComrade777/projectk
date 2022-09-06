@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -7,15 +8,18 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-html{
+
+html {
     font-size: 65.5%;
     overflow-x: hidden;
 }
-body{
-    background-color: #E4E9F7;
+
+body {
+    background-color: #ffffff;
     height: 100vh;
 }
-.header-container .navbar-container{
+
+.header-container .navbar-container {
     background-color: #000;
     display: flex;
     justify-content: space-between;
@@ -23,22 +27,26 @@ body{
     position: relative;
     padding: 2rem 5%;
 }
-.logo-container  a{
+
+.logo-container a {
     color: #fff;
     font-size: 2rem;
-    font-weight:500;
+    font-weight: 500;
 }
-.search-holder{
+
+.search-holder {
     position: relative;
     display: flex;
     align-items: center;
 }
-.search-holder input{
+
+.search-holder input {
     border: none;
     outline: none;
     padding: 10px 30px;
 }
-.search-holder  i{
+
+.search-holder i {
     padding: 12px;
     font-size: 1.4rem;
     border: 2px solid black;
@@ -49,26 +57,31 @@ body{
     background-color: black;
     color: #fff;
 }
-.navbar-container ul{
+
+.navbar-container ul {
     display: flex;
 }
-.navbar-container ul li{
+
+.navbar-container ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-.navbar-container ul li a{
+
+.navbar-container ul li a {
     color: #fff;
     font-weight: 300;
     font-size: 1.5rem;
 }
-.navbar-container .sub-menu-shiva{
-background: rgb(0, 0, 0);
-position: absolute;
-top: 110%;
-right: 5%;
+
+.navbar-container .sub-menu-shiva {
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top: 110%;
+    right: 5%;
 }
-.navbar-container .sub-menu-shiva .kiran a{
+
+.navbar-container .sub-menu-shiva .kiran a {
     display: block;
     margin: 10px;
     font-size: 1.5rem;
@@ -76,20 +89,22 @@ right: 5%;
     padding: 10px 20px;
 }
 
-.sub-menu-shiva{
+.sub-menu-shiva {
     position: absolute;
     top: 100%;
-    right:10%;
+    right: 10%;
     height: 170px;
     max-width: 0px;
     overflow: hidden;
     transition: max-height 0.5s;
     text-align: center;
 }
- .sub-menu-shiva.opening{
+
+.sub-menu-shiva.opening {
     max-width: 400px;
-} 
-.btn1{
+}
+
+.btn1 {
     background-color: black;
     border: none;
     cursor: pointer;
@@ -98,25 +113,71 @@ right: 5%;
     font-weight: 400;
     margin-left: 30px;
 }
-.filter-items{
+
+.filter-items {
     position: absolute;
     top: 110%;
     right: 20%;
     background-color: rgb(0, 0, 0);
     height: 200px;
-    max-width:0px;
+    max-width: 0px;
     overflow: hidden;
     text-align: center;
 }
-.filter-items.filteringopening{
+
+.filter-items.filteringopening {
     max-width: 260px;
 }
-.filter-items .kirangandu a{
+
+.filter-items .kirangandu a {
     display: block;
     width: 160px;
     text-align: center;
     margin: 20px;
     font-size: 1.5rem;
     color: #fff;
-    
+
+}
+.products-heading{
+    margin-top: 150px;
+}
+.products-heading h3 {
+    margin-top: 40px;
+    font-size: 3rem;
+    text-align: center;
+}
+.box-container{
+    display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.box{
+    margin-top: 40px;
+}
+.image img{
+    height:320px;
+    border: 1px solid black;
+}
+.info{
+    padding: 20px;
+    text-align: center;
+background-color: rgb(255, 255, 255);
+}
+.info h3{
+    font-size:1.7rem;
+}
+.info .price{
+    margin-top: 10px;
+    font-size: 1.9rem;
+}
+.cart-btn{
+    text-align: center;
+    margin-top: 10px;
+}
+.cart-btn a{
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
 }
